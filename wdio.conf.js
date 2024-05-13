@@ -52,7 +52,13 @@ export const config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        acceptInsecureCerts: 'true',
+
+        'goog:chromeOptions' : {
+            args: ['headless', 'disable-gpu'],
+            
+        }
     }],
 
     //
