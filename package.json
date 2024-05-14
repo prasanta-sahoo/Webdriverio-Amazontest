@@ -6,7 +6,8 @@
     "@wdio/cli": "^8.36.1",
     "@wdio/local-runner": "^8.36.1",
     "@wdio/mocha-framework": "^8.36.1",
-    "@wdio/spec-reporter": "^8.36.1"
+    "@wdio/spec-reporter": "^8.36.1",
+    "@types/selenium-standalone": "^7.0.4"
     
     
   },

@@ -110,6 +110,7 @@ export const config = {
     // commands. Instead, they hook themselves up into the test process.
     //services: [],
     services: [['selenium-standalone', {drivers:{chrome:'124.0.6367.60'}}]],
+    
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
