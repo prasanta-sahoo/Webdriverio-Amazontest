@@ -108,8 +108,8 @@ export const config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    //services: [],
-    services: [['selenium-standalone', {drivers:{chrome:'124.0.6367.60'}}]],
+    services: [{drivers:{chrome:'124.0.6367.60'}}],
+    //services: [['selenium-standalone', {drivers:{chrome:'124.0.6367.60'}}]],
     
     //
     // Framework you want to run your specs with.
