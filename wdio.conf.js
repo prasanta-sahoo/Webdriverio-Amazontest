@@ -53,7 +53,7 @@ export const config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        acceptInsecureCerts: 'true',
+        acceptInsecureCerts: true,
 
         'goog:chromeOptions' : {
             args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
