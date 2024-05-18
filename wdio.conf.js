@@ -56,10 +56,10 @@ export const config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
 
-    //    'goog:chromeOptions' : {
-     //       args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
+        'goog:chromeOptions' : {
+            args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
             
-     //   }
+        }
     }],
 
     //
