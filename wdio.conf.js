@@ -1,5 +1,6 @@
-
+import allure from '@wdio/allure-reporter';
 export const config = {
+   
     //
     // ====================
     // Runner Configuration
@@ -55,10 +56,10 @@ export const config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
 
-        'goog:chromeOptions' : {
-            args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
+    //    'goog:chromeOptions' : {
+     //       args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
             
-        }
+     //   }
     }],
 
     //
@@ -289,11 +290,13 @@ export const config = {
      */
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
-    onComplete: function() {
-        const reportError = new Error('Could not generate Allure report')
-        const generation = allure(['generate', 'allure-results', '--clean'])
-        return new Promise((resolve, reject) => {
-            const generationTimeout = setTimeout(
+    
+        onComplete: function() {
+            
+            const reportError = new Error('Could not generate Allure report')
+            const generation = allure(['generate', 'allure-results', '--clean'])
+            return new Promise((resolve, reject) => {
+                const generationTimeout = setTimeout(
                 () => reject(reportError),
                 5000)
 
@@ -308,7 +311,7 @@ export const config = {
                 resolve()
             })
         })
-    }
+    },
     /**
     * Gets executed when a refresh happens.
     * @param {string} oldSessionId session ID of the old session
