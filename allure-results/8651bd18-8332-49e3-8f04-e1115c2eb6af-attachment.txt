@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "(//div[@class=\"a-section aok-relative s-image-square-aspect\"])[1]"
-}
